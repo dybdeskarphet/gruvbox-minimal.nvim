@@ -1,0 +1,23 @@
+name: Build and Release Python Package
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body: "Full list of changes is in the CHANGELOG."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
