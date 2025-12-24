@@ -1,4 +1,4 @@
-name: Build and Release Python Package
+name: Create a release from the tag
 
 on:
   push:
