@@ -1,3 +1,13 @@
+## [unreleased]
+
+### 🚀 Features
+
+- *(init)* Add accent color to setup options
+- *(groups)* Use accent color for definitions
+
+### ⚙️ Miscellaneous Tasks
+
+- *(init)* Add types and format
 ## [0.2.1] - 2025-12-28
 
 ### 🐛 Bug Fixes
