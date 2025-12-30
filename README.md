@@ -61,7 +61,7 @@ require("gruvbox-minimal").setup({
 	italic_comments = false, -- Italic comments
 	contrast = "low", -- Available values: "high", "low"
 	theme = "dark", -- Available values: "dark", "light"
-	accent = "dark", -- Changes the definition (functions, structs etc.) colors. Available values: "red", "orange", "yellow", "green", "cyan", "blue", "magenta"
+	accent = "red", -- Changes the definition (functions, structs etc.) colors. Available values: "red", "orange", "yellow", "green", "cyan", "blue", "magenta"
 })
 
 -- Activates the colorscheme
