@@ -1,3 +1,9 @@
+## [unreleased]
+
+### 🚜 Refactor
+
+- *(palette)* Simplify determining base colors
+- *(palette)* Remove unused variables and definitions
 ## [0.3.0] - 2025-12-30
 
 ### 🚀 Features
