@@ -1,27 +1,28 @@
-local base_colors = {
-	-- FG and BG colors
-	base_00 = "#11110f",
-	base_01 = "#221f1d",
-	base_02 = "#2d2c2b",
-	base_03 = "#32302f",
-	base_04 = "#3c3836",
-	base_05 = "#504945",
-	base_06 = "#665c54",
-	base_07 = "#7c6f64",
-	base_08 = "#928374",
-	base_09 = "#a89984",
-	base_10 = "#bdae93",
-	base_11 = "#d5c4a1",
-	base_12 = "#ebdbb2",
-	base_13 = "#f2e5bc",
-	base_14 = "#fbf1c7",
-	base_15 = "#f9f5d7",
-}
-
 local M = {}
 
 function M.get(contrast, theme)
+	local base_colors = {
+		-- FG and BG colors
+		base_00 = "#11110f",
+		base_01 = "#221f1d",
+		base_02 = "#2d2c2b",
+		base_03 = "#32302f",
+		base_04 = "#3c3836",
+		base_05 = "#504945",
+		base_06 = "#665c54",
+		base_07 = "#7c6f64",
+		base_08 = "#928374",
+		base_09 = "#a89984",
+		base_10 = "#bdae93",
+		base_11 = "#d5c4a1",
+		base_12 = "#ebdbb2",
+		base_13 = "#f2e5bc",
+		base_14 = "#fbf1c7",
+		base_15 = "#f9f5d7",
+	}
+
 	local result = {}
+
 	if theme == "dark" then
 		if contrast == "low" then
 			result = {
@@ -39,22 +40,6 @@ function M.get(contrast, theme)
 				bg_cyan = "#31352c",
 				bg_blue = "#2f3431",
 				bg_magenta = "#3c2e2f",
-				base_00 = base_colors.base_00,
-				base_01 = base_colors.base_01,
-				base_02 = base_colors.base_02,
-				base_03 = base_colors.base_03,
-				base_04 = base_colors.base_04,
-				base_05 = base_colors.base_05,
-				base_06 = base_colors.base_06,
-				base_07 = base_colors.base_07,
-				base_08 = base_colors.base_08,
-				base_09 = base_colors.base_09,
-				base_10 = base_colors.base_10,
-				base_11 = base_colors.base_11,
-				base_12 = base_colors.base_12,
-				base_13 = base_colors.base_13,
-				base_14 = base_colors.base_14,
-				base_15 = base_colors.base_15,
 			}
 		elseif contrast == "high" then
 			result = {
@@ -72,22 +57,6 @@ function M.get(contrast, theme)
 				bg_cyan = "#31362b",
 				bg_blue = "#303330",
 				bg_magenta = "#3c2e2f",
-				base_00 = base_colors.base_00,
-				base_01 = base_colors.base_01,
-				base_02 = base_colors.base_02,
-				base_03 = base_colors.base_03,
-				base_04 = base_colors.base_04,
-				base_05 = base_colors.base_05,
-				base_06 = base_colors.base_06,
-				base_07 = base_colors.base_07,
-				base_08 = base_colors.base_08,
-				base_09 = base_colors.base_09,
-				base_10 = base_colors.base_10,
-				base_11 = base_colors.base_11,
-				base_12 = base_colors.base_12,
-				base_13 = base_colors.base_13,
-				base_14 = base_colors.base_14,
-				base_15 = base_colors.base_15,
 			}
 		else
 			result = { error = "Unknown contrast value." }
@@ -109,22 +78,6 @@ function M.get(contrast, theme)
 				bg_cyan = "#e0dfb7",
 				bg_blue = "#dfddbb",
 				bg_magenta = "#ebdabc",
-				base_00 = base_colors.base_15,
-				base_01 = base_colors.base_14,
-				base_02 = base_colors.base_13,
-				base_03 = base_colors.base_12,
-				base_04 = base_colors.base_11,
-				base_05 = base_colors.base_10,
-				base_06 = base_colors.base_09,
-				base_07 = base_colors.base_08,
-				base_08 = base_colors.base_07,
-				base_09 = base_colors.base_06,
-				base_10 = base_colors.base_05,
-				base_11 = base_colors.base_04,
-				base_12 = base_colors.base_03,
-				base_13 = base_colors.base_02,
-				base_14 = base_colors.base_01,
-				base_15 = base_colors.base_00,
 			}
 		elseif contrast == "high" then
 			result = {
@@ -142,28 +95,22 @@ function M.get(contrast, theme)
 				bg_cyan = "#e0dfb7",
 				bg_blue = "#dfddbb",
 				bg_magenta = "#ebdabc",
-				base_00 = base_colors.base_15,
-				base_01 = base_colors.base_14,
-				base_02 = base_colors.base_13,
-				base_03 = base_colors.base_12,
-				base_04 = base_colors.base_11,
-				base_05 = base_colors.base_10,
-				base_06 = base_colors.base_09,
-				base_07 = base_colors.base_08,
-				base_08 = base_colors.base_07,
-				base_09 = base_colors.base_06,
-				base_10 = base_colors.base_05,
-				base_11 = base_colors.base_04,
-				base_12 = base_colors.base_03,
-				base_13 = base_colors.base_02,
-				base_14 = base_colors.base_01,
-				base_15 = base_colors.base_00,
 			}
 		else
 			result = { error = "Unknown contrast value." }
 		end
 	else
 		result = { error = "Unknown theme value." }
+	end
+
+	base_result = {}
+
+	for i = 0, vim.tbl_count(base_colors) do
+		local key = string.format("base_%02d", i)
+		local target_index = (theme == "light") and (15 - i) or i
+		local target_key = string.format("base_%02d", target_index)
+		base_result[key] = base_colors[target_key]
+		result[key] = base_colors[target_key]
 	end
 
 	return result
