@@ -1,3 +1,8 @@
+## [unreleased]
+
+### 🐛 Bug Fixes
+
+- *(javascript)* Don't highlight const varaibles as constant
 ## [4.0.0] - 2026-01-17
 
 ### 🚀 Features
