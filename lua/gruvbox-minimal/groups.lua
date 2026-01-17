@@ -200,6 +200,13 @@ function M.setup(c, config)
 		RenderMarkdownUnchecked = { fg = c.red, bold = true },
 		RenderMarkdownChecked = { fg = c.green, bold = true },
 		RenderMarkdownBullet = { fg = c.yellow, bold = true },
+		--- lewis6991/gitsigns.nvim
+		GitSignsAdd = { fg = c.green },
+		GitSignsChange = { fg = c.blue },
+		GitSignsDelete = { fg = c.red },
+		GitSignsAddLn = { bg = c.bg_green },
+		GitSignsChangeLn = { bg = c.bg_blue },
+		GitSignsDeleteLn = { bg = c.bg_red },
 	}
 
 	groups = essential_groups
