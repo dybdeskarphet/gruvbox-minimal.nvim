@@ -239,8 +239,9 @@ function M.setup(c, config)
 			["@lsp.mod.readonly"] = { link = "Constant" },
 			["@lsp.mod.static"] = { link = "Constant" },
 
-			-- TypeScript
+			-- TypeScript / JavaScript
 			["@lsp.mod.readonly.typescript"] = {},
+			["@lsp.mod.readonly.javascript"] = {},
 		})
 	end
 
