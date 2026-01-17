@@ -5,6 +5,10 @@
 - *(groups)* Add custom TS colors for todo.txt files
 - *(groups)* Use accent color instead of red with todo.txt context tags
 - *(groups)* Add support for semantic highlights
+
+### 🐛 Bug Fixes
+
+- *(typescript)* Don't highlight const variables as constant
 ## [0.3.1] - 2026-01-01
 
 ### 🚜 Refactor
