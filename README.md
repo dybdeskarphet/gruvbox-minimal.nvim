@@ -62,7 +62,7 @@ require("gruvbox-minimal").setup({
 	contrast = "low", -- Available values: "high", "low"
 	theme = "dark", -- Available values: "dark", "light"
 	accent = "red", -- Changes the definition (functions, structs etc.) colors. Available values: "red", "orange", "yellow", "green", "cyan", "blue", "magenta"
-    semantic_highlights = true, -- Uses Tree-sitter semantic highlighting, disable this if you want the highlights of =<  0.3.1
+    semantic_highlights = true, -- Uses LSP semantic highlighting, disable this if you want the highlights of =< 0.3.1
 })
 
 -- Activates the colorscheme
