@@ -238,6 +238,9 @@ function M.setup(c, config)
 			["@lsp.mod.documentation"] = { link = "Comment" },
 			["@lsp.mod.readonly"] = { link = "Constant" },
 			["@lsp.mod.static"] = { link = "Constant" },
+
+			-- TypeScript
+			["@lsp.mod.readonly.typescript"] = {},
 		})
 	end
 
