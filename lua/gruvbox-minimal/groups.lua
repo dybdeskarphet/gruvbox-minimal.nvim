@@ -207,6 +207,8 @@ function M.setup(c, config)
 		GitSignsAddLn = { bg = c.bg_green },
 		GitSignsChangeLn = { bg = c.bg_blue },
 		GitSignsDeleteLn = { bg = c.bg_red },
+		-- folke/flash.nvim
+		FlashLabel = { fg = c.base_00, bg = c[config.accent] },
 	}
 
 	groups = essential_groups
