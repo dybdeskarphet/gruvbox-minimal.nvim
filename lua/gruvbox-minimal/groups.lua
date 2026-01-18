@@ -101,7 +101,7 @@ function M.setup(c, config)
 		Float = { fg = c.base_15 },
 		Operator = { fg = c.base_10 },
 		Identifier = { fg = c.base_15 },
-		Function = { fg = c[config.accent], italic = true },
+		Function = { fg = c[config.accent], italic = config.italic_functions },
 		Statement = { fg = c.base_15 },
 		Conditional = { fg = c.base_15 },
 		Repeat = { fg = c.base_15 },
@@ -133,8 +133,8 @@ function M.setup(c, config)
 		["@variable"] = { link = "Identifier" },
 		["@constant.builtin"] = { link = "Constant" },
 		["@function.builtin"] = { link = "Function" },
-		["@function.call"] = { fg = c.base_12, italic = true },
-		["@function.method.call"] = { fg = c.base_12, italic = true },
+		["@function.call"] = { fg = c.base_12, italic = config.italic_functions },
+		["@function.method.call"] = { fg = c.base_12, italic = config.italic_functions },
 		["@comment.error"] = { bg = c.red, fg = c.bg_red },
 		["@comment.warning"] = { bg = c.orange, fg = c.bg_orange },
 		["@comment.todo"] = { bg = c.green, fg = c.bg_green },
@@ -252,6 +252,10 @@ function M.setup(c, config)
 			["@lsp.mod.readonly.typescript"] = {},
 			["@lsp.mod.readonly.javascript"] = {},
 		})
+	end
+
+	if config.overrides and next(config.overrides) ~= nil then
+		groups = vim.tbl_deep_extend("force", groups, config.overrides)
 	end
 
 	return groups

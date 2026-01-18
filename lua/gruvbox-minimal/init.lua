@@ -5,10 +5,12 @@
 --- @class GruvboxConfig
 --- @field transparent? boolean
 --- @field italic_comments? boolean
+--- @field italic_functions? boolean
 --- @field contrast? GruvboxContrast
 --- @field theme? GruvboxTheme
 --- @field accent? GruvboxAccent
 --- @field semantic_highlights? boolean
+--- @field overrides? table<string, table> -- accepts hex colors or links
 
 local M = {}
 
@@ -16,10 +18,12 @@ local M = {}
 M.config = {
 	transparent = false,
 	italic_comments = false,
+	italic_functions = true,
 	contrast = "low",
 	theme = "dark",
 	accent = "red",
 	semantic_highlights = true,
+	overrides = {},
 }
 
 --- @param opts? GruvboxConfig

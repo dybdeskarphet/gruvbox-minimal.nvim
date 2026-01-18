@@ -59,10 +59,15 @@ The default configuration settings are as follows:
 require("gruvbox-minimal").setup({
 	transparent = false, -- Sets all the major background values to 'none'
 	italic_comments = false, -- Italic comments
+	italic_functions = true, -- Italic functions and methods
 	contrast = "low", -- Available values: "high", "low"
 	theme = "dark", -- Available values: "dark", "light"
 	accent = "red", -- Changes the definition (functions, structs etc.) colors. Available values: "red", "orange", "yellow", "green", "cyan", "blue", "magenta"
     semantic_highlights = true, -- Uses LSP semantic highlighting, disable this if you want the highlights of =< 0.3.1
+	overrides = {
+      -- Type = { fg = '#83a598' }, -- Hex override
+      -- ['Type'] = { link = '@function.method.call' }, -- Link to another group
+	},
 })
 
 -- Activates the colorscheme
