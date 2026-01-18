@@ -1,3 +1,14 @@
+## [unreleased]
+
+### 💼 Other
+
+- Add GitSigns highlight group
+- Make `FlashLabel` more noticable
+- Make italics optional and add option to override highlights
+
+### ⚙️ Miscellaneous Tasks
+
+- *(cliff)* Don't filter unconventional commits
 ## [4.1.0] - 2026-01-17
 
 ### 🐛 Bug Fixes
@@ -45,8 +56,16 @@
 
 - Add high/low contrast and dark/light theme options
 
+### 💼 Other
+
+- Merge remote-tracking branch 'refs/remotes/origin/main'
+
 ### ⚙️ Miscellaneous Tasks
 
 - *(release)* Rename the release action
 - *(scripts)* Add alpha simulator script
 ## [0.1.0] - 2025-12-24
+
+### 💼 Other
+
+- Initial commit
