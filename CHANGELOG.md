@@ -3,6 +3,7 @@
 ### 🚀 Features
 
 - *(groups)* Add mini.indentscope support
+- *(groups)* Add indent-blankline.nvim support
 
 ### 🐛 Bug Fixes
 
