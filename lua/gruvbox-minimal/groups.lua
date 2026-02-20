@@ -207,6 +207,9 @@ function M.setup(c, config)
 		GitSignsDeleteLn = { bg = c.bg_red },
 		-- folke/flash.nvim
 		FlashLabel = { fg = c.base_00, bg = c[config.accent] },
+		-- lukas-reineke/indent-blankline.nvim
+		IblIndent = { fg = c.base_05 },
+		IblScope = { fg = c.base_08 },
 	}
 
 	groups = essential_groups
