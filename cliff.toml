@@ -6,9 +6,11 @@
 # A Tera template to be rendered for each release in the changelog.
 # See https://keats.github.io/tera/docs/#introduction
 body = """
+{% if version and version | trim_start_matches(pat="v") == "0.3.1" %}\
 > [!IMPORTANT]
 > I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
 
+{% endif %}\
 {% if version %}\
     ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
 {% else %}\
