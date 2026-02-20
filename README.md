@@ -77,7 +77,13 @@ vim.cmd.colorscheme('gruvbox-minimal')
 ## Themed plugins
 
 - [mini.nvim](https://github.com/nvim-mini/mini.nvim)
+  - mini.hipatterns
+  - mini.statusline
+  - mini.diff
+  - mini.clue
+  - mini.indentscope
 - [MeanderingProgrammer/render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [shellRaining/hlchunk.nvim](https://github.com/shellRaining/hlchunk.nvim)
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [folke/flash.nvim](https://github.com/folke/flash.nvim)
+- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
