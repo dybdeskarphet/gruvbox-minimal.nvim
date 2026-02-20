@@ -1,5 +1,13 @@
 ## [unreleased]
 
+### 🚀 Features
+
+- *(groups)* Add mini.indentscope support
+
+### 🐛 Bug Fixes
+
+- *(groups)* Prevent the hlchunk.nvim plugin from overriding highlights
+
 ### 💼 Other
 
 - Add GitSigns highlight group
