@@ -191,6 +191,9 @@ function M.setup(c, config)
 		MiniClueNextKeyWithPostkeys = { fg = c.base_12, bg = config.transparent and "none" or c.base_02 },
 		MiniClueSeparator = { fg = c.base_12, bg = config.transparent and "none" or c.base_02 },
 		MiniClueTitle = { fg = c.yellow, bg = config.transparent and "none" or c.base_02 },
+		-- mini.indentscope
+		MiniIndentscopeSymbol = { fg = c.base_08 },
+		MiniIndentscopeSymbolOff = { fg = c.base_05 },
 		--- render-markdown.nvim
 		RenderMarkdownH1Bg = { bg = c.bg_red, fg = c.red, bold = true },
 		RenderMarkdownH2Bg = { bg = c.bg_green, fg = c.green, bold = true },
