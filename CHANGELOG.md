@@ -1,3 +1,14 @@
+> [!IMPORTANT]
+> I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
+
+## [unreleased]
+
+### ⚙️ Miscellaneous Tasks
+
+- *(cliff)* Add notice about versioning confusion to git-cliff
+> [!IMPORTANT]
+> I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
+
 ## [4.2.0] - 2026-02-20
 
 ### 🚀 Features
@@ -18,11 +29,17 @@
 ### ⚙️ Miscellaneous Tasks
 
 - *(cliff)* Don't filter unconventional commits
+> [!IMPORTANT]
+> I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
+
 ## [4.1.0] - 2026-01-17
 
 ### 🐛 Bug Fixes
 
 - *(javascript)* Don't highlight const varaibles as constant
+> [!IMPORTANT]
+> I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
+
 ## [4.0.0] - 2026-01-17
 
 ### 🚀 Features
@@ -38,12 +55,18 @@
 ### ⚙️ Miscellaneous Tasks
 
 - *(release)* Add CHANGELOG link to release body text
+> [!IMPORTANT]
+> I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
+
 ## [0.3.1] - 2026-01-01
 
 ### 🚜 Refactor
 
 - *(palette)* Simplify determining base colors
 - *(palette)* Remove unused variables and definitions
+> [!IMPORTANT]
+> I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
+
 ## [0.3.0] - 2025-12-30
 
 ### 🚀 Features
@@ -54,11 +77,17 @@
 ### ⚙️ Miscellaneous Tasks
 
 - *(init)* Add types and format
+> [!IMPORTANT]
+> I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
+
 ## [0.2.1] - 2025-12-28
 
 ### 🐛 Bug Fixes
 
 - *(groups)* Fix search groups not being visible
+> [!IMPORTANT]
+> I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
+
 ## [0.2.0] - 2025-12-26
 
 ### 🚀 Features
@@ -73,6 +102,9 @@
 
 - *(release)* Rename the release action
 - *(scripts)* Add alpha simulator script
+> [!IMPORTANT]
+> I don't know how I failed to notice, but I made a mistake with the versioning after v0.3.1. The fact that v4.0.0 came after v0.3.1 is entirely due to my lack of attention. Please excuse me if this causes any confusion.
+
 ## [0.1.0] - 2025-12-24
 
 ### 💼 Other
