@@ -162,11 +162,6 @@ function M.setup(c, config)
 		DiagnosticUnderlineHint = { sp = c.blue, underline = true },
 		DiagnosticUnderlineOk = { sp = c.green, underline = true },
 		DiagnosticUnnecessary = { fg = c.base_10 },
-		--- hlchunk.nvim
-		HLChunk1 = { fg = c.base_08 },
-		HLChunk2 = { fg = c.base_08 },
-		HLIndent = { fg = c.base_05 },
-		HLIndent1 = { fg = c.base_05 },
 		--- mini.hipatterns
 		MiniHipatternsTodo = { bg = c.green, fg = c.bg_green, bold = true },
 		MiniHipatternsFixme = { bg = c.red, fg = c.bg_red, bold = true },
@@ -256,6 +251,16 @@ function M.setup(c, config)
 			["@lsp.mod.readonly.javascript"] = {},
 		})
 	end
+
+	-- For the plugins that initalizes the highlights very late
+	vim.schedule(function()
+		if package.loaded["hlchunk"] then
+			vim.api.nvim_set_hl(0, "HLChunk1", { fg = c.base_08 })
+			vim.api.nvim_set_hl(0, "HLChunk2", { fg = c.base_08 })
+			vim.api.nvim_set_hl(0, "HLIndent", { fg = c.base_05 })
+			vim.api.nvim_set_hl(0, "HLIndent1", { fg = c.base_05 })
+		end
+	end)
 
 	if config.overrides and next(config.overrides) ~= nil then
 		groups = vim.tbl_deep_extend("force", groups, config.overrides)
