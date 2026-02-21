@@ -1,5 +1,9 @@
 ## [unreleased]
 
+### 🚀 Features
+
+- *(groups)* Add more mini.nvim support
+
 ### ⚙️ Miscellaneous Tasks
 
 - *(cliff)* Add notice about versioning confusion to git-cliff
