@@ -3,6 +3,7 @@
 ### 🚀 Features
 
 - *(groups)* Add more mini.nvim support
+- *(terminal)* Add terminal color support
 
 ### ⚙️ Miscellaneous Tasks
 
