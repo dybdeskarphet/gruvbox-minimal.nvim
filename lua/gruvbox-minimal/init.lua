@@ -10,6 +10,7 @@
 --- @field theme? GruvboxTheme
 --- @field accent? GruvboxAccent
 --- @field semantic_highlights? boolean
+--- @field terminal_colors? boolean
 --- @field overrides? table<string, table> -- accepts hex colors or links
 
 local M = {}
@@ -24,6 +25,7 @@ M.config = {
 	accent = "red",
 	semantic_highlights = true,
 	overrides = {},
+	terminal_colors = true,
 }
 
 --- @param opts? GruvboxConfig
@@ -38,6 +40,8 @@ function M.load()
 	for group, settings in pairs(groups) do
 		vim.api.nvim_set_hl(0, group, settings)
 	end
+
+	require("gruvbox-minimal.terminal").setup(palette, M.config)
 end
 
 return M
