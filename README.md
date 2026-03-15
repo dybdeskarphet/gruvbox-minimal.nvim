@@ -64,6 +64,7 @@ require("gruvbox-minimal").setup({
 	theme = "dark", -- Available values: "dark", "light"
 	accent = "red", -- Changes the definition (functions, structs etc.) colors. Available values: "red", "orange", "yellow", "green", "cyan", "blue", "magenta"
     semantic_highlights = true, -- Uses LSP semantic highlighting, disable this if you want the highlights of =< 0.3.1
+    terminal_colors = true, -- Replaces the terminal's ANSI colors with color scheme's
 	overrides = {
       -- Type = { fg = '#83a598' }, -- Hex override
       -- ['Type'] = { link = '@function.method.call' }, -- Link to another group
