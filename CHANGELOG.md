@@ -4,6 +4,11 @@
 
 - *(groups)* Add more mini.nvim support
 - *(terminal)* Add terminal color support
+- *(groups)* Add beacon.nvim support
+
+### 🐛 Bug Fixes
+
+- *(groups)* Fix folding support
 
 ### ⚙️ Miscellaneous Tasks
 
