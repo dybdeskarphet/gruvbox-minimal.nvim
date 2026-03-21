@@ -244,6 +244,8 @@ function M.setup(c, config)
 		-- lukas-reineke/indent-blankline.nvim
 		IblIndent = { fg = c.base_05 },
 		IblScope = { fg = c.base_08 },
+		-- beacon.nvim
+		Beacon = { bg = c.base_09 },
 	}
 
 	groups = essential_groups
