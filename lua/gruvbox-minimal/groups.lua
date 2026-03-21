@@ -79,7 +79,6 @@ function M.setup(c, config)
 		EndOfBuffer = { fg = c.base_06 },
 		ErrorMsg = { fg = c.red },
 		WinSeparator = { fg = c.base_10 },
-		FoldColumn = { fg = c.base_12 },
 		NonText = { fg = c.base_06 },
 		Title = { fg = c.yellow, bold = true },
 		Visual = { bg = c.base_04 },
@@ -87,6 +86,8 @@ function M.setup(c, config)
 		WarningMsg = { fg = c.yellow },
 		WhiteSpace = { fg = c.base_06 },
 		WildMenu = { fg = c.base_15, bg = c.base_04 },
+		Folded = { fg = c.base_09, bg = config.transparent and "none" or c.base_03, italic = true },
+		FoldColumn = { fg = c.red },
 
 		WinBarNC = { bg = config.transparent and "none" or c.base_01, fg = c.base_10 },
 		WinBar = { bg = c.base_03, fg = c.base_13 },
