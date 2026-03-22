@@ -193,7 +193,7 @@ function M.setup(c, config)
 		MiniIndentscopeSymbol = { fg = c.base_08 },
 		MiniIndentscopeSymbolOff = { fg = c.base_05 },
 		-- mini.notify
-		MiniNotifyBorder = { link = "FloatBorder" },
+		MiniNotifyBorder = { fg = c.base_08, bg = c.base_02 },
 		MiniNotifyLspProgress = { fg = c.base_12, bg = c.base_02 },
 		MiniNotifyNormal = { fg = c.base_15, bg = c.base_02 },
 		MiniNotifyTitle = { fg = c.base_15, bg = c.base_02 },
