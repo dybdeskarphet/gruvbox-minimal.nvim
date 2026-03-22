@@ -9,6 +9,7 @@
 ### 🐛 Bug Fixes
 
 - *(groups)* Fix folding support
+- *(groups)* Don't use transparency for mini.notify
 
 ### ⚙️ Miscellaneous Tasks
 
