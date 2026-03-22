@@ -10,6 +10,7 @@
 
 - *(groups)* Fix folding support
 - *(groups)* Don't use transparency for mini.notify
+- *(groups)* Fix the mini.notify border color with the same reason as the last commit
 
 ### ⚙️ Miscellaneous Tasks
 
