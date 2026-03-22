@@ -175,6 +175,16 @@ function M.setup(c, config)
 		MiniStatuslineModeReplace = { bg = c.magenta, fg = c.base_00 },
 		MiniStatuslineModeCommand = { bg = c.yellow, fg = c.base_00 },
 		MiniStatuslineModeOther = { bg = c.red, fg = c.base_15 },
+		--- mini.starter
+		MiniStarterFooter = { fg = c.base_10 },
+		MiniStarterHeader = { fg = c.base_10 },
+		MiniStarterInactive = { fg = c.base_06 },
+		MiniStarterItem = { link = "Normal" },
+		MiniStarterCurrent = { link = "MiniStarterItem" },
+		MiniStarterItemBullet = { fg = c.base_10 },
+		MiniStarterItemPrefix = { fg = c.base_10 },
+		MiniStarterSection = { fg = c.base_11, bold = true },
+		MiniStarterQuery = { bold = true },
 		--- mini.diff
 		MiniDiffSignDelete = { fg = c.red },
 		MiniDiffSignAdd = { fg = c.green },
