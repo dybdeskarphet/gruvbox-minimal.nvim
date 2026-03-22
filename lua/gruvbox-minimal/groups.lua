@@ -194,9 +194,9 @@ function M.setup(c, config)
 		MiniIndentscopeSymbolOff = { fg = c.base_05 },
 		-- mini.notify
 		MiniNotifyBorder = { link = "FloatBorder" },
-		MiniNotifyLspProgress = { fg = c.base_12, bg = config.transparent and "none" or c.base_02 },
-		MiniNotifyNormal = { fg = c.base_15, bg = config.transparent and "none" or c.base_02 },
-		MiniNotifyTitle = { fg = c.base_15, bg = config.transparent and "none" or c.base_02 },
+		MiniNotifyLspProgress = { fg = c.base_12, bg = c.base_02 },
+		MiniNotifyNormal = { fg = c.base_15, bg = c.base_02 },
+		MiniNotifyTitle = { fg = c.base_15, bg = c.base_02 },
 		-- mini.files
 		MiniFilesBorder = { link = "FloatBorder" },
 		MiniFilesBorderModified = { fg = c.base_12, bg = config.transparent and "none" or c.base_02 },
