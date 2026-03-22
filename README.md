@@ -83,6 +83,7 @@ vim.cmd.colorscheme('gruvbox-minimal')
   - mini.diff
   - mini.clue
   - mini.indentscope
+  - mini.starter
 - [MeanderingProgrammer/render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [shellRaining/hlchunk.nvim](https://github.com/shellRaining/hlchunk.nvim)
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
