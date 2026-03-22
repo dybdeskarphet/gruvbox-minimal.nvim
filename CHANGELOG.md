@@ -5,6 +5,7 @@
 - *(groups)* Add more mini.nvim support
 - *(terminal)* Add terminal color support
 - *(groups)* Add beacon.nvim support
+- *(groups)* Add mini.starter support
 
 ### 🐛 Bug Fixes
 
