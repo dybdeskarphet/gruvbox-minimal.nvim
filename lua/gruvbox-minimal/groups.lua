@@ -70,6 +70,7 @@ function M.setup(c, config)
 		DiffChange = { fg = c.yellow },
 		DiffDelete = { fg = c.red },
 		DiffText = { fg = c.yellow, bg = c.bg_yellow },
+		DiffTextAdd = { fg = c.green, bg = c.bg_green },
 
 		-- Others
 		ColorColumn = { bg = c.base_03 },
