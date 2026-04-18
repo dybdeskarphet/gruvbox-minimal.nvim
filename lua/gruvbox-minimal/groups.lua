@@ -250,6 +250,12 @@ function M.setup(c, config)
 		GitSignsAddLn = { bg = c.bg_green },
 		GitSignsChangeLn = { bg = c.bg_blue },
 		GitSignsDeleteLn = { bg = c.bg_red },
+		-- kosayoda/nvim-lightbulb
+		LightBulbSign = { fg = c.yellow, bg = c.bg_yellow },
+		LightBulbVirtualText = { fg = c.yellow, bg = c.bg_yellow },
+		LightBulbFloatWin = { fg = c.yellow, bg = c.bg_yellow },
+		LightBulbNumber = { fg = c.yellow, bg = config.transparent and "none" or c.base_02 },
+		LightBulbLine = { fg = c.yellow, bg = c.bg_yellow },
 		-- folke/flash.nvim
 		FlashLabel = { fg = c.base_00, bg = c[config.accent] },
 		-- lukas-reineke/indent-blankline.nvim
