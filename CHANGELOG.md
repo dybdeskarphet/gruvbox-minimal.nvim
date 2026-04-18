@@ -3,6 +3,7 @@
 ### 🚀 Features
 
 - *(groups)* Add new Neovim 0.12 highlight
+- *(groups)* Add kosayoda/nvim-lightbulb support
 ## [4.3.0] - 2026-03-22
 
 ### 🚀 Features
