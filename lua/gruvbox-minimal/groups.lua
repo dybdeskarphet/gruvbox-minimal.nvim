@@ -263,6 +263,41 @@ function M.setup(c, config)
 		IblScope = { fg = c.base_08 },
 		-- beacon.nvim
 		Beacon = { bg = c.base_09 },
+		-- m-pilia/vim-mediawiki
+		wikiItalic = { italic = true },
+		wikiBold = { bold = true },
+		wikiBoldAndItalic = { bold = true, italic = true },
+
+		wikiH1 = { fg = c.red, bg = c.bg_red, bold = true },
+		wikiH2 = { fg = c.green, bg = c.bg_green, bold = true },
+		wikiH3 = { fg = c.yellow, bg = c.bg_yellow, bold = true },
+		wikiH4 = { fg = c.cyan, bg = c.bg_cyan, bold = true },
+		wikiH5 = { fg = c.magenta, bg = c.bg_magenta, bold = true },
+		wikiH6 = { bold = true },
+
+		wikiLink = { fg = c.base_10, italic = true },
+		wikiLinkPage = { fg = c.base_13 },
+		wikiLinkName = { fg = c.base_15, bold = true },
+		wikiLinkAttribute = { fg = c.base_15, italic = false },
+
+		wikiExternalLink = { fg = c.base_10, italic = true },
+		wikiExternalLinkDelimiter = { fg = c.base_10 },
+		wikiExternalLinkName = { fg = c.base_15, bold = true },
+
+		wikiTemplate = { fg = c.base_10 },
+		wikiTemplateDelim = { fg = c.base_10 },
+		wikiTemplateName = { fg = c.base_13, bold = true },
+		wikiTemplateParam = { fg = c.base_15 },
+
+		wikiTableSeparator = { fg = c.base_10 },
+		wikiTableHeadingCell = { fg = c.base_15, bold = true },
+
+		wikiPre = { fg = c.base_12, bg = c.base_03, bold = false },
+		htmlPre = { link = "wikiPre" },
+		wikiSource = { link = "wikiPre" },
+		wikiSyntaxHL = { link = "wikiPre" },
+
+		wikiParaFormatChar = { fg = c.cyan },
 	}
 
 	groups = essential_groups
