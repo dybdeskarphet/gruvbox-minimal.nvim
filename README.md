@@ -24,6 +24,15 @@
 
 ## Installation
 
+<details><summary>vim.pack</summary>
+
+```lua
+vim.pack.add("https://github.com/dybdeskarphet/gruvbox-minimal.nvim")
+vim.cmd.colorscheme("gruvbox-minimal")
+```
+
+</details>
+
 <details><summary>lazy.nvim</summary>
 
 ```lua
