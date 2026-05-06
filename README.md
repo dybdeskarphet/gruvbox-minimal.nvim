@@ -49,6 +49,7 @@ vim.cmd.colorscheme("gruvbox-minimal")
 <details><summary>mini.deps</summary>
 
 ```lua
+-- Assuming that require("mini.deps").setup() call has been made
 MiniDeps.add({
     source = "dybdeskarphet/gruvbox-minimal.nvim"
 })
