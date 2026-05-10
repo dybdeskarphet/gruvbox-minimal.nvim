@@ -340,6 +340,17 @@ function M.setup(c, config)
 			-- TypeScript / JavaScript
 			["@lsp.mod.readonly.typescript"] = {},
 			["@lsp.mod.readonly.javascript"] = {},
+
+			-- SQL
+			["@string.sql"] = { link = "String" },
+			["@boolean.sql"] = { link = "Boolean" },
+			["@number.sql"] = { link = "Number" },
+			["@function.call.sql"] = { fg = c[config.accent] },
+			["@keyword.sql"] = { fg = c.base_15 },
+			["@keyword.operator.sql"] = { link = "Operator" },
+			["@operator.sql"] = { link = "Operator" },
+			["@punctuation.sql"] = { link = "Operator" },
+			["@keyword.conditional.sql"] = { italic = true },
 		})
 	end
 
