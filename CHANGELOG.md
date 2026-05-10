@@ -1,3 +1,8 @@
+## [unreleased]
+
+### 🚀 Features
+
+- *(groups)* Add semantic highlights for SQL
 ## [4.4.0] - 2026-04-30
 
 ### 🚀 Features
