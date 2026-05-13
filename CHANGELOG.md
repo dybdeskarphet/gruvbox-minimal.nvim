@@ -3,6 +3,7 @@
 ### 🚀 Features
 
 - *(groups)* Add semantic highlights for SQL
+- *(react)* Highlight uppercase variables as constant
 ## [4.4.0] - 2026-04-30
 
 ### 🚀 Features
