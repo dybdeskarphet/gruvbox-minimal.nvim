@@ -4,6 +4,7 @@
 
 - *(groups)* Add semantic highlights for SQL
 - *(react)* Highlight uppercase variables as constant
+- *(optional)* Add docstring with markdown syntax support for Python
 ## [4.4.0] - 2026-04-30
 
 ### 🚀 Features
