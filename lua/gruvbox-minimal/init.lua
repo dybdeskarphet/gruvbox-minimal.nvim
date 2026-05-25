@@ -2,6 +2,9 @@
 --- @alias GruvboxTheme "dark" | "light"
 --- @alias GruvboxAccent "red" | "orange" | "yellow" | "green" | "cyan" | "blue" | "magenta"
 
+--- @class MarkdownDocstring
+--- @field python? boolean
+
 --- @class GruvboxConfig
 --- @field transparent? boolean
 --- @field italic_comments? boolean
@@ -11,6 +14,7 @@
 --- @field accent? GruvboxAccent
 --- @field semantic_highlights? boolean
 --- @field terminal_colors? boolean
+--- @field markdown_docstring? MarkdownDocstring
 --- @field overrides? table<string, table> -- accepts hex colors or links
 
 local M = {}
@@ -26,6 +30,9 @@ M.config = {
 	semantic_highlights = true,
 	overrides = {},
 	terminal_colors = true,
+	markdown_docstring = {
+		python = false,
+	},
 }
 
 --- @param opts? GruvboxConfig
@@ -42,6 +49,7 @@ function M.load()
 	end
 
 	require("gruvbox-minimal.terminal").setup(palette, M.config)
+	require("gruvbox-minimal.optional").setup(M.config)
 end
 
 return M
