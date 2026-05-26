@@ -77,7 +77,7 @@ require("gruvbox-minimal").setup({
     terminal_colors = true, -- Replaces the terminal's ANSI colors with color scheme's
     markdown_docstring = {
         python = false, -- Only available language for now
-    }, -- Highlights dosctring content as markdown
+    }, -- Highlights docstring content as markdown
 	overrides = {
       -- Type = { fg = '#83a598' }, -- Hex override
       -- ['Type'] = { link = '@function.method.call' }, -- Link to another group
