@@ -300,7 +300,7 @@ function M.setup(c, config)
 		wikiParaFormatChar = { fg = c.cyan },
 	}
 
-	groups = essential_groups
+	local groups = essential_groups
 
 	if config.semantic_highlights then
 		groups = vim.tbl_deep_extend("force", essential_groups, {
