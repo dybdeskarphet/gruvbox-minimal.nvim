@@ -6,7 +6,7 @@ local M = {}
 --- @return GruvboxPalette
 function M.get_palette(contrast, theme)
 	theme = (theme == "dark") and "dark" or "light"
-	contrast = (theme == "high") and "high" or "low"
+	contrast = (contrast == "low") and "low" or "high"
 	local base_colors = {
 		-- FG and BG colors
 		base_00 = "#11110f",
