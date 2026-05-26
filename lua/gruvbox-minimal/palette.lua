@@ -103,7 +103,7 @@ function M.get(contrast, theme)
 		result = { error = "Unknown theme value." }
 	end
 
-	for i = 0, vim.tbl_count(base_colors) do
+	for i = 0, vim.tbl_count(base_colors) - 1 do
 		local key = string.format("base_%02d", i)
 		local target_index = (theme == "light") and (15 - i) or i
 		local target_key = string.format("base_%02d", target_index)
