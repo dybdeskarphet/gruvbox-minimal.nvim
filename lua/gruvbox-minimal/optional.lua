@@ -1,5 +1,7 @@
+--- @class GruvboxOptional
 local M = {}
 
+--- Setup optional injections and configurations
 --- @param config GruvboxConfig
 function M.setup(config)
 	if config.markdown_docstring.python then

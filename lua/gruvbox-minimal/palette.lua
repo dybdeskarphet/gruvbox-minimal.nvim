@@ -1,6 +1,12 @@
 local M = {}
 
-function M.get(contrast, theme)
+--- Generate the palette based on contrast and theme
+--- @param contrast GruvboxContrast
+--- @param theme GruvboxTheme
+--- @return GruvboxPalette
+function M.get_palette(contrast, theme)
+	theme = (theme == "dark") and "dark" or "light"
+	contrast = (theme == "high") and "high" or "low"
 	local base_colors = {
 		-- FG and BG colors
 		base_00 = "#11110f",
@@ -41,7 +47,7 @@ function M.get(contrast, theme)
 				bg_blue = "#2f3431",
 				bg_magenta = "#3c2e2f",
 			}
-		elseif contrast == "high" then
+		else
 			result = {
 				red = "#f2594b",
 				orange = "#f28534",
@@ -58,10 +64,8 @@ function M.get(contrast, theme)
 				bg_blue = "#303330",
 				bg_magenta = "#3c2e2f",
 			}
-		else
-			result = { error = "Unknown contrast value." }
 		end
-	elseif theme == "light" then
+	else
 		if contrast == "low" then
 			result = {
 				red = "#c14a4a",
@@ -79,7 +83,7 @@ function M.get(contrast, theme)
 				bg_blue = "#dfddbb",
 				bg_magenta = "#ebdabc",
 			}
-		elseif contrast == "high" then
+		else
 			result = {
 				red = "#af2528",
 				orange = "#b94c07",
@@ -96,11 +100,7 @@ function M.get(contrast, theme)
 				bg_blue = "#dfddbb",
 				bg_magenta = "#ebdabc",
 			}
-		else
-			result = { error = "Unknown contrast value." }
 		end
-	else
-		result = { error = "Unknown theme value." }
 	end
 
 	for i = 0, vim.tbl_count(base_colors) - 1 do

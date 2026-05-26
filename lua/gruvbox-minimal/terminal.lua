@@ -1,6 +1,8 @@
+--- @class GruvboxTerminal
 local M = {}
 
---- @param c table
+--- Setup terminal colors
+--- @param c GruvboxPalette
 --- @param config GruvboxConfig
 function M.setup(c, config)
 	if not config.terminal_colors then

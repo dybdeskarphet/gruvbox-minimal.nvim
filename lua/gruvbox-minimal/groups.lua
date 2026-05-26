@@ -1,6 +1,10 @@
 local M = {}
 
+--- @param c GruvboxPalette
+--- @param config GruvboxConfig
+--- @return HighlightTable
 function M.setup(c, config)
+	--- @type HighlightTable
 	local essential_groups = {
 		-- Essentials
 		Normal = { fg = c.base_15, bg = config.transparent and "none" or c.base_01 },
