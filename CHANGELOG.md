@@ -1,3 +1,8 @@
+## [unreleased]
+
+### 🚀 Features
+
+- *(groups)* [**breaking**] Make the colors in render-markdown match the theme
 ## [4.5.0] - 2026-05-26
 
 ### 🚀 Features
