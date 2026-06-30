@@ -3,6 +3,7 @@
 ### 🚀 Features
 
 - *(groups)* [**breaking**] Make the colors in render-markdown match the theme
+- *(groups)* [**breaking**] Revert the render-markdown header colors to colored ones
 ## [4.5.0] - 2026-05-26
 
 ### 🚀 Features
