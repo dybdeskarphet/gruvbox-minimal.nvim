@@ -366,6 +366,17 @@ function M.setup(c, config)
 			["@operator.sql"] = { link = "Operator" },
 			["@punctuation.sql"] = { link = "Operator" },
 			["@keyword.conditional.sql"] = { italic = true },
+
+			-- "GruvboxMinimal.." colors in case user wants to use them or I want to add a query
+			GruvboxMinimalRed = { fg = c.red },
+			GruvboxMinimalOrange = { fg = c.orange },
+			GruvboxMinimalYellow = { fg = c.yellow },
+			GruvboxMinimalGreen = { fg = c.green },
+			GruvboxMinimalCyan = { fg = c.cyan },
+			GruvboxMinimalBlue = { fg = c.blue },
+			GruvboxMinimalMagenta = { fg = c.magenta },
+			GruvboxMinimalAccent = { fg = c[config.accent] },
+			GruvboxMinimalBadge = { fg = c[config.accent], bg = c["bg" .. config.accent], bold = true },
 		})
 	end
 
@@ -379,6 +390,7 @@ function M.setup(c, config)
 		end
 	end)
 
+	-- Overrides from the user
 	if config.overrides and next(config.overrides) ~= nil then
 		groups = vim.tbl_deep_extend("force", groups, config.overrides)
 	end
