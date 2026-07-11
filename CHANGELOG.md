@@ -4,6 +4,8 @@
 
 - *(groups)* [**breaking**] Make the colors in render-markdown match the theme
 - *(groups)* [**breaking**] Revert the render-markdown header colors to colored ones
+- *(groups)* Add theme's own highlights as groups
+- *(groups)* Make only the A,B,C and D priorities bold in todo.txt files
 ## [4.5.0] - 2026-05-26
 
 ### 🚀 Features
