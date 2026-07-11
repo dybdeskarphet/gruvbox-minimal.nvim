@@ -147,9 +147,12 @@ function M.setup(c, config)
 		["@comment.note"] = { bg = c.blue, fg = c.bg_blue },
 
 		--- todo.txt TS
-		["@type.todotxt"] = { fg = c[config.accent] },
+		["@type.todotxt"] = { fg = c[config.accent], bg = c["bg_" .. config.accent] },
 		["@string.todotxt"] = { fg = c.cyan },
 		["@comment.todotxt"] = { fg = c.base_10 },
+		["@keyword.todotxt"] = { fg = c.base_15, bold = true },
+		["@gruvbox_minimal.todotxt.pri_high"] = { fg = c.base_15, bold = true },
+		["@gruvbox_minimal.todotxt.pri_low"] = { fg = c.base_15, bold = false, nocombine = true },
 
 		-- Diagnostics
 		DiagnosticError = { fg = c.red },
