@@ -76,8 +76,11 @@ require("gruvbox-minimal").setup({
     semantic_highlights = true, -- Uses LSP semantic highlighting, disable this if you want the highlights of =< 0.3.1
     terminal_colors = true, -- Replaces the terminal's ANSI colors with color scheme's
     markdown_docstring = {
-        python = false, -- Only available language for now
+        python = false, -- Only available filetype for now
     }, -- Highlights docstring content as markdown
+    extend = {
+        todotxt = true, -- Extends todo.txt syntax highlighting with markdown_inline (only available filetype for now)
+    }, -- Extends the syntax highlighting in numerous ways
 	overrides = {
       -- Type = { fg = '#83a598' }, -- Hex override
       -- ['Type'] = { link = '@function.method.call' }, -- Link to another group
