@@ -14,6 +14,9 @@ M.config = {
 	markdown_docstring = {
 		python = false,
 	},
+	extend = {
+		todotxt = true,
+	},
 }
 
 --- Colorscheme setup function
