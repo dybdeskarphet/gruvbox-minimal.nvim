@@ -20,6 +20,7 @@
 ### ⚙️ Miscellaneous Tasks
 
 - Rename optional.lua as extend.lua
+- *(cliff)* Run git-cliff after releases
 ## [4.5.0] - 2026-05-26
 
 ### 🚀 Features
