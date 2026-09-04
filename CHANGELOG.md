@@ -6,6 +6,20 @@
 - *(groups)* [**breaking**] Revert the render-markdown header colors to colored ones
 - *(groups)* Add theme's own highlights as groups
 - *(groups)* Make only the A,B,C and D priorities bold in todo.txt files
+- Add inline markdown support to todotxt files
+
+### 🐛 Bug Fixes
+
+- *(groups)* Add missing underscore for GruvboxMinimalBadge
+
+### 🚜 Refactor
+
+- Split highlight groups into individual files
+- Move all the extended features into a features dir
+
+### ⚙️ Miscellaneous Tasks
+
+- Rename optional.lua as extend.lua
 ## [4.5.0] - 2026-05-26
 
 ### 🚀 Features
