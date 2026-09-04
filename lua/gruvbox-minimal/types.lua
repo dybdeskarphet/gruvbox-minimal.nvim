@@ -40,6 +40,9 @@
 --- @class MarkdownDocstring
 --- @field python? boolean
 
+--- @class Extend
+--- @field todotxt? boolean
+
 --- @class GruvboxConfig
 --- @field transparent? boolean
 --- @field italic_comments? boolean
@@ -50,4 +53,5 @@
 --- @field semantic_highlights? boolean
 --- @field terminal_colors? boolean
 --- @field markdown_docstring? MarkdownDocstring
+--- @field extend? Extend
 --- @field overrides? HighlightTable -- accepts hex colors or links
