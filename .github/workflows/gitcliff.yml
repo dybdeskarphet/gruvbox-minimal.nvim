@@ -1,6 +1,12 @@
 name: Update CHANEGLOG
 
 on:
+  workflow_run:
+    workflows: ["Create a release from the tag"]
+    types:
+      - completed
+    branches:
+      - main
   push:
     branches:
       - main
