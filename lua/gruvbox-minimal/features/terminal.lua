@@ -1,4 +1,3 @@
---- @class GruvboxTerminal
 local M = {}
 
 --- Setup terminal colors

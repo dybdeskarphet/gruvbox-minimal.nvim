@@ -33,8 +33,7 @@ function M.load()
 		vim.api.nvim_set_hl(0, group, settings)
 	end
 
-	require("gruvbox-minimal.terminal").setup(palette, M.config)
-	require("gruvbox-minimal.extend").setup(M.config)
+	require("gruvbox-minimal.features").setup(palette, M.config)
 end
 
 return M
