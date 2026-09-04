@@ -1,9 +1,10 @@
---- @class GruvboxOptional
+--- @class GruvboxExtend
 local M = {}
 
 --- Setup optional injections and configurations
 --- @param config GruvboxConfig
 function M.setup(config)
+	-- Python
 	if config.markdown_docstring.python then
 		vim.treesitter.query.set(
 			"python",
