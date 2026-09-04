@@ -1,4 +1,3 @@
---- @class GruvboxExtend
 local M = {}
 
 --- Setup optional injections and configurations
