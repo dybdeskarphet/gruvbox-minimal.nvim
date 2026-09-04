@@ -379,7 +379,7 @@ function M.setup(c, config)
 			GruvboxMinimalBlue = { fg = c.blue },
 			GruvboxMinimalMagenta = { fg = c.magenta },
 			GruvboxMinimalAccent = { fg = c[config.accent] },
-			GruvboxMinimalBadge = { fg = c[config.accent], bg = c["bg" .. config.accent], bold = true },
+			GruvboxMinimalBadge = { fg = c[config.accent], bg = c["bg_" .. config.accent], bold = true },
 		})
 	end
 
