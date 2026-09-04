@@ -34,7 +34,7 @@ function M.load()
 	end
 
 	require("gruvbox-minimal.terminal").setup(palette, M.config)
-	require("gruvbox-minimal.optional").setup(M.config)
+	require("gruvbox-minimal.extend").setup(M.config)
 end
 
 return M
